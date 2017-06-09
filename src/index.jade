@@ -6,60 +6,71 @@ html
     title SMART CAR
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet', type='text/css', href='build/bootstrap.min.css')
 
   body
+  .container
+    .row
+      .navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            span.glyphicon.glyphicon-star.star 
+            span.glyphicon.glyphicon-star.star
+            span.glyphicon.glyphicon-star.star 
+
+          .navbar-collapse.collapse
+            ul.navbar-right.nav.navbar-nav
+              li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                  span.glyphicon.glyphicon-check.glyphiconY
+                  |  File Presentasi
+                ul.dropdown-menu(role='menu')
+                  li
+                    a(href='#3') Sejarah Smart Car 
+                  li
+                    a(href='#4') Cara Kerja Smart Car
+                  li
+                    a(href='#6') Jenis Smart Car
+                  li
+                    a(href='#8') Tantangan Produksi
+                  li
+                    a(href='#15') Keuntungan dan Kerugian
 
     article
 
       section.layar
         h1 SMART CAR
-        h2 GOOGLE SELF DRIVING CAR 
-        h3 Nama Kelompok
+        h1 GOOGLE SELF DRIVING CAR 
+        h1 Nama Kelompok
         li Agus Setiawan (151113373)
+        li Bintang Antonius Sinurat (151113730)
+        li Putra Irwanto Saragih (151112017)
         li Yessy Kaspia (151113624)
-        li Bintang Antonius (151113730)
-        li PUtra Irwanto (151112017)
-        img.avatar(src='images/A.jpg')
-        
+        img.avatar(src='images/B.jpg')
+
+      .lg-3
       section.layar
-        .h1 Pengenalan
+        .h2 Sejarah Smart Car
+        img.king(src='images/B.jpg')
         .p Google akhirnya benar-benar mewujudkan Mobil pintar alias smart car dengan cara memodifikasi mobil Toyota Pirus, Lexus SUV, dll.  Mobil tanpa sopir tersebut dibuat dengan menempatkan beberapa sensor, kamera, dan laser yang bisa berputar di bagian atasnya untuk mendeteksi kondisi sekitar.
         div Google’s Self Driving Car disingkat SDC adalah proyek Google X yang melibatkan mobil otonom dan mobil listrik yang dilengkapi perangkat lunak berteknologi terkini dari Google.
-        div Driverless Car(Tanpa Sopir)  Mobil tanpa pengemudi yang tidak melibatkan setir dan alat mekanik lain seperti pedal gas, kopling maupun rem diperkenalkan Google sebagai salah satu visi yang ingin mereka capai. Mobil tersebut dioperasikan di sekitar California dekat kantor Google di Mountain View. Mobil tersebut bisa dipanggil dengan menggunakan smartphone untuk menentukan lokasi penjemputan serta lokasi tujuan. 
+        div Driverless Car(Tanpa Sopir)  Mobil tanpa pengemudi yang tidak melibatkan setir dan alat mekanik lain seperti pedal gas, kopling maupun rem diperkenalkan Google sebagai salah satu visi yang ingin mereka capai. Mobil tersebut dioperasikan di dekat kantor Google di Mountain View. Mobil tersebut bisa dipanggil dengan menggunakan smartphone untuk menentukan lokasi penjemputan serta lokasi tujuan. 
         div Semua kontrol manual dihilangkan dan hanya ada tombol start dan tombol berhenti secara darurat yang berwarna merah. Di depan penumpang disematkan sebuah layar kecil yang menunjukkan berbagai informasi seperti, kecepatan mobil, cuaca, dan lain-lain. Setelah anda sampai di tujuan, layar kecil tersebut akan menampilkan pesan yang akan mengingatkan penumpang untuk mengambil barang-barang pribadi serta berbagai pesan yang lainnya layaknya seorang sopir.
 
+        .lg-4
       section.layar
         h2 Cara Kerja Smart Car
+        img.kn(src='images/C.jpg')
         h3 Mobil ini menggunakan tenaga listrik yang bisa berjalan hingga 100 mil menggunakan berbagai kombinasi sensor dan software teknologi terbaru untuk mencari sendiri kondisi lingkungan di sekitarnya yang dikombinasikan dengan Google Maps dan GPS. Semua mobil dilengkapi dengan sistem navigasi satelit, radar, laser, dan camera360 derajat.
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
+        
+        .lg-8
+      section.layar
+        h4 Jenis Smart Car
+        img.kn(src='images/D.jpg') 
+        
+        img.kn(src='images/E.jpg')
 
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
 
     script(src='build/build.js')
+    script(src='build/jquery.js')
+    script(src='build/bootstrap.min.js')
